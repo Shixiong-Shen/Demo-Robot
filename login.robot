@@ -7,5 +7,5 @@ Valid Login
     Input Username    shiixiong.shen@gmail.com
     Input Password    assignment1
     Submit Credentials
-    Welcome Page Should Be Open
-    [Teardown]    Close Browser
+    BuiltIn.Wait Until Keyword Succeeds    2    5    Welcome Page Should Be Open
+    Input Search    tv

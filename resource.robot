@@ -5,13 +5,12 @@ Library           OperatingSystem
 *** Variables ***
 ${SERVER}         www.walmart.com
 ${BROWSER}        Chrome
-${DELAY}          0.5
+${DELAY}          0
 ${VALID USER}     shiixiong.shen@gmail.com
 ${VALID PASSWORD}    assignment1
 ${LOGIN URL}      http://${SERVER}/account/login?returnUrl=%2Faccount%2F
 ${WELCOME URL}    https://${SERVER}/account/
 ${ERROR URL}      http://${SERVER}/error.html
-${BIN_DIR}        C:\Python27\Scripts
 
 *** Keywords ***	
 Open Browser To Login Page
@@ -34,6 +33,10 @@ Input Username
 Input Password
     [Arguments]    ${password}
     Input Text    login-password    ${password}
+
+Input Search
+    [Arguments]    ${search}
+    Input Text    search    ${search}
 
 Submit Credentials
     Click Button    xpath=//button[@class="btn login-sign-in-btn js-login-sign-in btn-block-max-s btn-block-max-s"]
