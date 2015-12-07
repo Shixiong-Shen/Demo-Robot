@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20151206 20:37:30.602" generator="Robot 2.9a3 (Python 2.7.9 on win32)">
+<suite source="C:\Users\ssx2014\Desktop\Demo-Robot\login.robot" id="s1" name="Login">
+<test id="s1-t1" name="Valid Login">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20151206 20:37:30.758" level="INFO">Opening browser 'Chrome' to base url 'http://www.walmart.com/account/login?returnUrl=%2Faccount%2F'</msg>
+<status status="PASS" endtime="20151206 20:37:35.490" starttime="20151206 20:37:30.742"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20151206 20:37:35.730" starttime="20151206 20:37:35.490"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20151206 20:37:35.731" starttime="20151206 20:37:35.730"></status>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Walmart</arg>
+</arguments>
+<msg timestamp="20151206 20:37:36.266" level="INFO">Page title is 'Walmart'.</msg>
+<status status="PASS" endtime="20151206 20:37:36.267" starttime="20151206 20:37:35.732"></status>
+</kw>
+<status status="PASS" endtime="20151206 20:37:36.268" starttime="20151206 20:37:35.731"></status>
+</kw>
+<status status="PASS" endtime="20151206 20:37:36.269" starttime="20151206 20:37:30.742"></status>
+</kw>
+<kw name="Input Username" library="resource">
+<arguments>
+<arg>shiixiong.shen@gmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>login-username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20151206 20:37:36.275" level="INFO">Typing text 'shiixiong.shen@gmail.com' into text field 'login-username'</msg>
+<status status="PASS" endtime="20151206 20:37:39.556" starttime="20151206 20:37:36.273"></status>
+</kw>
+<status status="PASS" endtime="20151206 20:37:39.557" starttime="20151206 20:37:36.271"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>assignment1</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>login-password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20151206 20:37:39.564" level="INFO">Typing text 'assignment1' into text field 'login-password'</msg>
+<status status="PASS" endtime="20151206 20:37:43.201" starttime="20151206 20:37:39.562"></status>
+</kw>
+<status status="PASS" endtime="20151206 20:37:43.201" starttime="20151206 20:37:39.559"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@class="btn login-sign-in-btn js-login-sign-in btn-block-max-s btn-block-max-s"]</arg>
+</arguments>
+<msg timestamp="20151206 20:37:43.206" level="INFO">Clicking button 'xpath=//button[@class="btn login-sign-in-btn js-login-sign-in btn-block-max-s btn-block-max-s"]'.</msg>
+<status status="PASS" endtime="20151206 20:37:47.521" starttime="20151206 20:37:43.206"></status>
+</kw>
+<status status="PASS" endtime="20151206 20:37:47.523" starttime="20151206 20:37:43.203"></status>
+</kw>
+<kw name="Welcome Page Should Be Open" library="resource">
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>${WELCOME URL}</arg>
+</arguments>
+<msg timestamp="20151206 20:37:49.538" level="INFO">Current location is 'https://www.walmart.com/account/'.</msg>
+<status status="PASS" endtime="20151206 20:37:49.541" starttime="20151206 20:37:47.526"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Walmart</arg>
+</arguments>
+<msg timestamp="20151206 20:37:50.221" level="INFO">Page title is 'Walmart'.</msg>
+<status status="PASS" endtime="20151206 20:37:50.221" starttime="20151206 20:37:49.541"></status>
+</kw>
+<status status="PASS" endtime="20151206 20:37:50.223" starttime="20151206 20:37:47.523"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20151206 20:37:51.892" starttime="20151206 20:37:50.226"></status>
+</kw>
+<status status="PASS" endtime="20151206 20:37:51.892" critical="yes" starttime="20151206 20:37:30.742"></status>
+</test>
+<status status="PASS" endtime="20151206 20:37:51.892" starttime="20151206 20:37:30.602"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Login" pass="1">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
