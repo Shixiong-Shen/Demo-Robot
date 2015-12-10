@@ -3,9 +3,10 @@
 (1) Install Robot Framework: https://github.com/robotframework/robotframework/blob/master/INSTALL.rst</br>
 (2) Install Selenium2Library: https://github.com/robotframework/Selenium2Library/blob/master/INSTALL.rst</br>
 (3)</br>
-<1>Download chromedriver: http://chromedriver.storage.googleapis.com/index.html?path=2.20/</br>
-<2>Put the executable file under Python installation folder. Ex, C:\Python27\chromedriver.exe</br>
+<1> Download chromedriver: http://chromedriver.storage.googleapis.com/index.html?path=2.20/</br>
+<2> Put the executable file under Python installation folder. Ex, C:\Python27\chromedriver.exe</br>
 (4) Run command: <i>pybot -v SEARCH_KEY:search-item walmart.robot</i>, replace "search-item" with tv, dvd, socks, toys, or iphone</br>
+(5) Vedio showing the demo: https://www.youtube.com/watch?v=xh6ETMq42Tw
 
 ###2. Meet Requirements</br>
 (1) I implemented all the requirements listed in the assignment file.</br>
