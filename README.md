@@ -5,7 +5,7 @@
 (3)</br>
 <1>Download chromedriver: http://chromedriver.storage.googleapis.com/index.html?path=2.20/</br>
 <2>Put the executable file under Python installation folder. Ex, C:\Python27\chromedriver.exe</br>
-(4) Run command: <i>pybot -v SEARCH_KEY:search-item walmart.robot</i></br>, replace "search-item" with tv, dvd, socks, toys, or iphone</br>
+(4) Run command: <i>pybot -v SEARCH_KEY:search-item walmart.robot</i>, replace "search-item" with tv, dvd, socks, toys, or iphone</br>
 
 ###2. Meet Requirements</br>
 (1) I implemented all the requirements listed in the assignment file.</br>
