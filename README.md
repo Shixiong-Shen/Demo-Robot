@@ -2,9 +2,8 @@
 1. Installation
 (1) Install Robot Framework: https://github.com/robotframework/robotframework/blob/master/INSTALL.rst
 (2) Install Selenium2Library: https://github.com/robotframework/Selenium2Library/blob/master/INSTALL.rst
-(3)
-* Download chromedriver: http://chromedriver.storage.googleapis.com/index.html?path=2.20/
-* Put the executable file under Python installation folder. Ex, C:\Python27\chromedriver.exe
+(3) * Download chromedriver: http://chromedriver.storage.googleapis.com/index.html?path=2.20/
+    * Put the executable file under Python installation folder. Ex, C:\Python27\chromedriver.exe
 (4) Run command: pybot walmart.robot
 (5) In resource.robot-line 6, you can try different search items(tv, dvd, socks, toys, iphone) by replacing existing one.
 
