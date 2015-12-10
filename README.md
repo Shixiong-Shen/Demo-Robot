@@ -5,7 +5,7 @@
 (3)</br>
 <1>Download chromedriver: http://chromedriver.storage.googleapis.com/index.html?path=2.20/</br>
 <2>Put the executable file under Python installation folder. Ex, C:\Python27\chromedriver.exe</br>
-(4) Run command: <i>pybot -v SEARCH_KEY:tv walmart.robot</i>, replace "tv" with tv, dvd, socks, toys, or iphone</br>
+(4) Run command: <b><i>pybot -v SEARCH_KEY:tv walmart.robot</i></b>, replace "tv" with tv, dvd, socks, toys, or iphone</br>
 (5) Video showing the demo: https://www.youtube.com/watch?v=xh6ETMq42Tw
 
 ###2. Meet Requirements</br>
