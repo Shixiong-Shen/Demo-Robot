@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20151210 04:59:34.365" generator="Robot 2.9a3 (Python 2.7.9 on win32)">
+<robot generated="20151210 05:26:37.618" generator="Robot 2.9a3 (Python 2.7.9 on win32)">
 <suite source="C:\Users\ssx2014\Desktop\Demo-Robot\walmart.robot" id="s1" name="Walmart">
 <test id="s1-t1" name="Valid Login">
 <kw name="Open Browser To Login Page" library="resource">
@@ -9,28 +9,28 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20151210 04:59:34.521" level="INFO">Opening browser 'Chrome' to base url 'http://www.walmart.com/account/login?returnUrl=%2Faccount%2F'</msg>
-<status status="PASS" endtime="20151210 04:59:39.373" starttime="20151210 04:59:34.521"></status>
+<msg timestamp="20151210 05:26:37.758" level="INFO">Opening browser 'Chrome' to base url 'http://www.walmart.com/account/login?returnUrl=%2Faccount%2F'</msg>
+<status status="PASS" endtime="20151210 05:26:42.783" starttime="20151210 05:26:37.758"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20151210 04:59:39.517" starttime="20151210 04:59:39.374"></status>
+<status status="PASS" endtime="20151210 05:26:42.916" starttime="20151210 05:26:42.784"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" endtime="20151210 04:59:39.521" starttime="20151210 04:59:39.519"></status>
+<status status="PASS" endtime="20151210 05:26:42.917" starttime="20151210 05:26:42.917"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Sign in to your account</arg>
 </arguments>
-<status status="PASS" endtime="20151210 04:59:40.093" starttime="20151210 04:59:39.522"></status>
+<status status="PASS" endtime="20151210 05:26:43.201" starttime="20151210 05:26:42.918"></status>
 </kw>
-<status status="PASS" endtime="20151210 04:59:40.093" starttime="20151210 04:59:34.521"></status>
+<status status="PASS" endtime="20151210 05:26:43.201" starttime="20151210 05:26:37.758"></status>
 </kw>
 <kw name="Input Username" library="resource">
 <arguments>
@@ -42,10 +42,10 @@
 <arg>login-username</arg>
 <arg>${username}</arg>
 </arguments>
-<msg timestamp="20151210 04:59:40.096" level="INFO">Typing text 'shiixiong.shen@gmail.com' into text field 'login-username'</msg>
-<status status="PASS" endtime="20151210 04:59:40.963" starttime="20151210 04:59:40.095"></status>
+<msg timestamp="20151210 05:26:43.203" level="INFO">Typing text 'shiixiong.shen@gmail.com' into text field 'login-username'</msg>
+<status status="PASS" endtime="20151210 05:26:44.184" starttime="20151210 05:26:43.203"></status>
 </kw>
-<status status="PASS" endtime="20151210 04:59:40.964" starttime="20151210 04:59:40.094"></status>
+<status status="PASS" endtime="20151210 05:26:44.185" starttime="20151210 05:26:43.202"></status>
 </kw>
 <kw name="Input Password" library="resource">
 <arguments>
@@ -57,10 +57,10 @@
 <arg>login-password</arg>
 <arg>${password}</arg>
 </arguments>
-<msg timestamp="20151210 04:59:40.966" level="INFO">Typing text 'assignment1' into text field 'login-password'</msg>
-<status status="PASS" endtime="20151210 04:59:41.846" starttime="20151210 04:59:40.965"></status>
+<msg timestamp="20151210 05:26:44.186" level="INFO">Typing text 'assignment1' into text field 'login-password'</msg>
+<status status="PASS" endtime="20151210 05:26:44.892" starttime="20151210 05:26:44.186"></status>
 </kw>
-<status status="PASS" endtime="20151210 04:59:41.847" starttime="20151210 04:59:40.964"></status>
+<status status="PASS" endtime="20151210 05:26:44.893" starttime="20151210 05:26:44.185"></status>
 </kw>
 <kw name="Submit Credentials" library="resource">
 <kw name="Click Button" library="Selenium2Library">
@@ -68,17 +68,17 @@
 <arguments>
 <arg>xpath=//button[@class="btn login-sign-in-btn js-login-sign-in btn-block-max-s btn-block-max-s"]</arg>
 </arguments>
-<msg timestamp="20151210 04:59:41.848" level="INFO">Clicking button 'xpath=//button[@class="btn login-sign-in-btn js-login-sign-in btn-block-max-s btn-block-max-s"]'.</msg>
-<status status="PASS" endtime="20151210 04:59:42.748" starttime="20151210 04:59:41.848"></status>
+<msg timestamp="20151210 05:26:44.895" level="INFO">Clicking button 'xpath=//button[@class="btn login-sign-in-btn js-login-sign-in btn-block-max-s btn-block-max-s"]'.</msg>
+<status status="PASS" endtime="20151210 05:26:45.653" starttime="20151210 05:26:44.894"></status>
 </kw>
-<status status="PASS" endtime="20151210 04:59:42.748" starttime="20151210 04:59:41.847"></status>
+<status status="PASS" endtime="20151210 05:26:45.653" starttime="20151210 05:26:44.893"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Welcome to your Walmart account!</arg>
 </arguments>
-<status status="PASS" endtime="20151210 04:59:44.537" starttime="20151210 04:59:42.749"></status>
+<status status="PASS" endtime="20151210 05:26:47.470" starttime="20151210 05:26:45.655"></status>
 </kw>
 <kw name="Empty Cart" library="resource">
 <kw name="Click Element" library="Selenium2Library">
@@ -86,15 +86,15 @@
 <arguments>
 <arg>xpath=//i[@class="wmicon wmicon-cart"]</arg>
 </arguments>
-<msg timestamp="20151210 04:59:44.539" level="INFO">Clicking element 'xpath=//i[@class="wmicon wmicon-cart"]'.</msg>
-<status status="PASS" endtime="20151210 04:59:46.392" starttime="20151210 04:59:44.538"></status>
+<msg timestamp="20151210 05:26:47.472" level="INFO">Clicking element 'xpath=//i[@class="wmicon wmicon-cart"]'.</msg>
+<status status="PASS" endtime="20151210 05:26:48.003" starttime="20151210 05:26:47.471"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Your cart:</arg>
 </arguments>
-<status status="PASS" endtime="20151210 04:59:46.854" starttime="20151210 04:59:46.392"></status>
+<status status="PASS" endtime="20151210 05:26:50.318" starttime="20151210 05:26:48.003"></status>
 </kw>
 <kw type="for" name="${i} IN RANGE [ 9999 ]">
 <kw type="foritem" name="${i} = 0">
@@ -112,28 +112,28 @@
 <arguments>
 <arg>xpath=//button[@id="CartRemItemBtn"]</arg>
 </arguments>
-<msg timestamp="20151210 04:59:47.070" level="INFO">Current page does not contain button 'xpath=//button[@id="CartRemItemBtn"]'.</msg>
-<msg timestamp="20151210 04:59:47.268" level="INFO">Current page does not contain input 'xpath=//button[@id="CartRemItemBtn"]'.</msg>
-<status status="PASS" endtime="20151210 04:59:47.269" starttime="20151210 04:59:46.856"></status>
+<msg timestamp="20151210 05:26:50.490" level="INFO">Current page does not contain button 'xpath=//button[@id="CartRemItemBtn"]'.</msg>
+<msg timestamp="20151210 05:26:50.687" level="INFO">Current page does not contain input 'xpath=//button[@id="CartRemItemBtn"]'.</msg>
+<status status="PASS" endtime="20151210 05:26:50.688" starttime="20151210 05:26:50.320"></status>
 </kw>
-<msg timestamp="20151210 04:59:47.269" level="INFO">${var} = True</msg>
-<status status="PASS" endtime="20151210 04:59:47.269" starttime="20151210 04:59:46.855"></status>
+<msg timestamp="20151210 05:26:50.688" level="INFO">${var} = True</msg>
+<status status="PASS" endtime="20151210 05:26:50.688" starttime="20151210 05:26:50.319"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>${var}</arg>
 </arguments>
-<msg timestamp="20151210 04:59:47.270" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" endtime="20151210 04:59:47.270" starttime="20151210 04:59:47.270"></status>
+<msg timestamp="20151210 05:26:50.689" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" endtime="20151210 05:26:50.689" starttime="20151210 05:26:50.688"></status>
 </kw>
-<status status="PASS" endtime="20151210 04:59:47.271" starttime="20151210 04:59:46.855"></status>
+<status status="PASS" endtime="20151210 05:26:50.689" starttime="20151210 05:26:50.319"></status>
 </kw>
-<status status="PASS" endtime="20151210 04:59:47.271" starttime="20151210 04:59:46.854"></status>
+<status status="PASS" endtime="20151210 05:26:50.690" starttime="20151210 05:26:50.318"></status>
 </kw>
-<status status="PASS" endtime="20151210 04:59:47.271" starttime="20151210 04:59:44.537"></status>
+<status status="PASS" endtime="20151210 05:26:50.690" starttime="20151210 05:26:47.471"></status>
 </kw>
-<status status="PASS" endtime="20151210 04:59:47.272" critical="yes" starttime="20151210 04:59:34.521"></status>
+<status status="PASS" endtime="20151210 05:26:50.691" critical="yes" starttime="20151210 05:26:37.758"></status>
 </test>
 <test id="s1-t2" name="Perform Search">
 <kw name="Input Search" library="resource">
@@ -146,18 +146,18 @@
 <arg>search</arg>
 <arg>${search}</arg>
 </arguments>
-<msg timestamp="20151210 04:59:47.276" level="INFO">Typing text 'abc' into text field 'search'</msg>
-<status status="PASS" endtime="20151210 04:59:48.125" starttime="20151210 04:59:47.275"></status>
+<msg timestamp="20151210 05:26:50.695" level="INFO">Typing text 'iphone' into text field 'search'</msg>
+<status status="PASS" endtime="20151210 05:26:51.493" starttime="20151210 05:26:50.695"></status>
 </kw>
-<status status="PASS" endtime="20151210 04:59:48.125" starttime="20151210 04:59:47.274"></status>
+<status status="PASS" endtime="20151210 05:26:51.493" starttime="20151210 05:26:50.694"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//button[@class="searchbar-submit js-searchbar-submit" and @type="submit"]</arg>
 </arguments>
-<msg timestamp="20151210 04:59:48.127" level="INFO">Clicking button 'xpath=//button[@class="searchbar-submit js-searchbar-submit" and @type="submit"]'.</msg>
-<status status="PASS" endtime="20151210 04:59:57.775" starttime="20151210 04:59:48.126"></status>
+<msg timestamp="20151210 05:26:51.495" level="INFO">Clicking button 'xpath=//button[@class="searchbar-submit js-searchbar-submit" and @type="submit"]'.</msg>
+<status status="PASS" endtime="20151210 05:27:02.812" starttime="20151210 05:26:51.494"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -171,10 +171,10 @@
 <arguments>
 <arg>${SEARCH RES OTHERS}</arg>
 </arguments>
-<msg timestamp="20151210 04:59:57.842" level="INFO">Current location contains 'http://www.walmart.com/search/'.</msg>
-<status status="PASS" endtime="20151210 04:59:57.843" starttime="20151210 04:59:57.777"></status>
+<msg timestamp="20151210 05:27:02.881" level="INFO">Current location contains 'http://www.walmart.com/search/'.</msg>
+<status status="PASS" endtime="20151210 05:27:02.882" starttime="20151210 05:27:02.814"></status>
 </kw>
-<status status="PASS" endtime="20151210 04:59:57.843" starttime="20151210 04:59:57.776"></status>
+<status status="PASS" endtime="20151210 05:27:02.883" starttime="20151210 05:27:02.813"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -183,11 +183,11 @@
 <arg>Location Should Contain</arg>
 <arg>${SEARCH RES TOYS}</arg>
 </arguments>
-<status status="PASS" endtime="20151210 04:59:57.844" starttime="20151210 04:59:57.844"></status>
+<status status="PASS" endtime="20151210 05:27:02.885" starttime="20151210 05:27:02.884"></status>
 </kw>
-<status status="PASS" endtime="20151210 04:59:57.845" critical="yes" starttime="20151210 04:59:47.274"></status>
+<status status="PASS" endtime="20151210 05:27:02.885" critical="yes" starttime="20151210 05:26:50.693"></status>
 </test>
-<test id="s1-t3" name="Add To Card">
+<test id="s1-t3" name="Add To Cart">
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <arguments>
@@ -200,10 +200,10 @@
 <arguments>
 <arg>xpath=//img[@class="product-image"][1]</arg>
 </arguments>
-<msg timestamp="20151210 04:59:57.848" level="INFO">Clicking image 'xpath=//img[@class="product-image"][1]'.</msg>
-<status status="PASS" endtime="20151210 05:00:09.908" starttime="20151210 04:59:57.848"></status>
+<msg timestamp="20151210 05:27:02.889" level="INFO">Clicking image 'xpath=//img[@class="product-image"][1]'.</msg>
+<status status="PASS" endtime="20151210 05:27:20.317" starttime="20151210 05:27:02.889"></status>
 </kw>
-<status status="PASS" endtime="20151210 05:00:09.908" starttime="20151210 04:59:57.847"></status>
+<status status="PASS" endtime="20151210 05:27:20.318" starttime="20151210 05:27:02.888"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -212,7 +212,7 @@
 <arg>Click Image</arg>
 <arg>xpath=//img[@class="product-image js-product-image tile-row img-hide-alt"][1]</arg>
 </arguments>
-<status status="PASS" endtime="20151210 05:00:09.912" starttime="20151210 05:00:09.911"></status>
+<status status="PASS" endtime="20151210 05:27:20.320" starttime="20151210 05:27:20.319"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -221,23 +221,31 @@
 <arg>Click Element</arg>
 <arg>xpath=//span[@title="Silver"]</arg>
 </arguments>
-<status status="PASS" endtime="20151210 05:00:09.914" starttime="20151210 05:00:09.913"></status>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//span[@title="Silver"]</arg>
+</arguments>
+<msg timestamp="20151210 05:27:20.323" level="INFO">Clicking element 'xpath=//span[@title="Silver"]'.</msg>
+<status status="PASS" endtime="20151210 05:27:20.795" starttime="20151210 05:27:20.322"></status>
+</kw>
+<status status="PASS" endtime="20151210 05:27:20.796" starttime="20151210 05:27:20.321"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1.5s</arg>
 </arguments>
-<msg timestamp="20151210 05:00:11.415" level="INFO">Slept 1 second 500 milliseconds</msg>
-<status status="PASS" endtime="20151210 05:00:11.415" starttime="20151210 05:00:09.914"></status>
+<msg timestamp="20151210 05:27:22.305" level="INFO">Slept 1 second 500 milliseconds</msg>
+<status status="PASS" endtime="20151210 05:27:22.305" starttime="20151210 05:27:20.796"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//button[@id="WMItemAddToCartBtn"]</arg>
 </arguments>
-<msg timestamp="20151210 05:00:11.417" level="INFO">Clicking button 'xpath=//button[@id="WMItemAddToCartBtn"]'.</msg>
-<status status="PASS" endtime="20151210 05:00:12.560" starttime="20151210 05:00:11.416"></status>
+<msg timestamp="20151210 05:27:22.305" level="INFO">Clicking button 'xpath=//button[@id="WMItemAddToCartBtn"]'.</msg>
+<status status="PASS" endtime="20151210 05:27:23.732" starttime="20151210 05:27:22.305"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="Selenium2Library">
 <doc>Waits until element specified with `locator` appears on current page.</doc>
@@ -245,7 +253,7 @@
 <arg>xpath=//a[@id="PACSubTtlItemLnk" and contains(text(),'(1 item)')]</arg>
 <arg>10</arg>
 </arguments>
-<status status="PASS" endtime="20151210 05:00:13.342" starttime="20151210 05:00:12.562"></status>
+<status status="PASS" endtime="20151210 05:27:24.283" starttime="20151210 05:27:23.734"></status>
 </kw>
 <kw name="Empty Cart and Close" library="resource">
 <kw name="Click Link" library="Selenium2Library">
@@ -253,41 +261,41 @@
 <arguments>
 <arg>xpath=//a[@id="PACSubTtlItemLnk"]</arg>
 </arguments>
-<msg timestamp="20151210 05:00:13.344" level="INFO">Clicking link 'xpath=//a[@id="PACSubTtlItemLnk"]'.</msg>
-<status status="PASS" endtime="20151210 05:00:15.119" starttime="20151210 05:00:13.344"></status>
+<msg timestamp="20151210 05:27:24.286" level="INFO">Clicking link 'xpath=//a[@id="PACSubTtlItemLnk"]'.</msg>
+<status status="PASS" endtime="20151210 05:27:26.564" starttime="20151210 05:27:24.285"></status>
 </kw>
 <kw name="Wait Until Page Contains" library="Selenium2Library">
 <doc>Waits until `text` appears on current page.</doc>
 <arguments>
 <arg>Your cart:</arg>
 </arguments>
-<status status="PASS" endtime="20151210 05:00:16.056" starttime="20151210 05:00:15.119"></status>
+<status status="PASS" endtime="20151210 05:27:27.978" starttime="20151210 05:27:26.565"></status>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <doc>Clicks a button identified by `locator`.</doc>
 <arguments>
 <arg>xpath=//button[@id="CartRemItemBtn"]</arg>
 </arguments>
-<msg timestamp="20151210 05:00:16.057" level="INFO">Clicking button 'xpath=//button[@id="CartRemItemBtn"]'.</msg>
-<status status="PASS" endtime="20151210 05:00:16.218" starttime="20151210 05:00:16.057"></status>
+<msg timestamp="20151210 05:27:27.979" level="INFO">Clicking button 'xpath=//button[@id="CartRemItemBtn"]'.</msg>
+<status status="PASS" endtime="20151210 05:27:28.841" starttime="20151210 05:27:27.978"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
-<msg timestamp="20151210 05:00:17.219" level="INFO">Slept 1 second</msg>
-<status status="PASS" endtime="20151210 05:00:17.220" starttime="20151210 05:00:16.219"></status>
+<msg timestamp="20151210 05:27:29.842" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20151210 05:27:29.843" starttime="20151210 05:27:28.841"></status>
 </kw>
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20151210 05:00:18.575" starttime="20151210 05:00:17.221"></status>
+<status status="PASS" endtime="20151210 05:27:31.145" starttime="20151210 05:27:29.845"></status>
 </kw>
-<status status="PASS" endtime="20151210 05:00:18.575" starttime="20151210 05:00:13.343"></status>
+<status status="PASS" endtime="20151210 05:27:31.145" starttime="20151210 05:27:24.284"></status>
 </kw>
-<status status="PASS" endtime="20151210 05:00:18.575" critical="yes" starttime="20151210 04:59:57.846"></status>
+<status status="PASS" endtime="20151210 05:27:31.145" critical="yes" starttime="20151210 05:27:02.887"></status>
 </test>
-<status status="PASS" endtime="20151210 05:00:18.575" starttime="20151210 04:59:34.365"></status>
+<status status="PASS" endtime="20151210 05:27:31.145" starttime="20151210 05:26:37.618"></status>
 </suite>
 <statistics>
 <total>

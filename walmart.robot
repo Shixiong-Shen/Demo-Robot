@@ -16,7 +16,7 @@ Perform Search
     Run keyword if                     '${SEARCH_KEY}'!='toys'    Location Should Contain    ${SEARCH RES OTHERS}
     Run keyword if                     '${SEARCH_KEY}'=='toys'    Location Should Contain    ${SEARCH RES TOYS}
 	
-Add To Card
+Add To Cart
     Run keyword if                     '${SEARCH_KEY}'!='toys'    Click Image    xpath=//img[@class="product-image"][1]
     Run keyword if                     '${SEARCH_KEY}'=='toys'    Click Image    xpath=//img[@class="product-image js-product-image tile-row img-hide-alt"][1]
     Run keyword if                     '${SEARCH_KEY}'=='iphone'  Click Element  xpath=//span[@title="Silver"]
