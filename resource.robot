@@ -36,15 +36,15 @@ Submit Credentials
 	
 Empty Cart
     Click Element    xpath=//i[@class="wmicon wmicon-cart"]
-	Wait Until Page Contains    Your cart:
-	:FOR    ${i}    IN RANGE    9999
-	\    ${var}    Run Keyword And Return Status    Page Should Not Contain Button    xpath=//button[@id="CartRemItemBtn"]
+    Wait Until Page Contains    Your cart:
+    :FOR    ${i}    IN RANGE    9999
+    \    ${var}    Run Keyword And Return Status    Page Should Not Contain Button    xpath=//button[@id="CartRemItemBtn"]
     \    Exit For Loop If    ${var}
-	\    Click Button    xpath=//button[@id="CartRemItemBtn"]
+    \    Click Button    xpath=//button[@id="CartRemItemBtn"]
 	
 Empty Cart and Close
     Click Link                  xpath=//a[@id="PACSubTtlItemLnk"]
-	Wait Until Page Contains    Your cart:
-	Click Button                xpath=//button[@id="CartRemItemBtn"]
-	Sleep                       1s
-	Close Browser
+    Wait Until Page Contains    Your cart:
+    Click Button                xpath=//button[@id="CartRemItemBtn"]
+    Sleep                       1s
+    Close Browser
