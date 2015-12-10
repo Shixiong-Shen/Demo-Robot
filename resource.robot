@@ -3,7 +3,7 @@ Library           BuiltIn
 Library           Selenium2Library
 
 *** Variables ***
-${SEARCH KEY}          tv
+${SEARCH_KEY}          iphone
 ${SERVER}              www.walmart.com
 ${BROWSER}             Chrome
 ${DELAY}               0

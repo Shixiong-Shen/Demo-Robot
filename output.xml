@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20151210 04:59:34.365" generator="Robot 2.9a3 (Python 2.7.9 on win32)">
+<suite source="C:\Users\ssx2014\Desktop\Demo-Robot\walmart.robot" id="s1" name="Walmart">
+<test id="s1-t1" name="Valid Login">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20151210 04:59:34.521" level="INFO">Opening browser 'Chrome' to base url 'http://www.walmart.com/account/login?returnUrl=%2Faccount%2F'</msg>
+<status status="PASS" endtime="20151210 04:59:39.373" starttime="20151210 04:59:34.521"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20151210 04:59:39.517" starttime="20151210 04:59:39.374"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20151210 04:59:39.521" starttime="20151210 04:59:39.519"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Sign in to your account</arg>
+</arguments>
+<status status="PASS" endtime="20151210 04:59:40.093" starttime="20151210 04:59:39.522"></status>
+</kw>
+<status status="PASS" endtime="20151210 04:59:40.093" starttime="20151210 04:59:34.521"></status>
+</kw>
+<kw name="Input Username" library="resource">
+<arguments>
+<arg>shiixiong.shen@gmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>login-username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20151210 04:59:40.096" level="INFO">Typing text 'shiixiong.shen@gmail.com' into text field 'login-username'</msg>
+<status status="PASS" endtime="20151210 04:59:40.963" starttime="20151210 04:59:40.095"></status>
+</kw>
+<status status="PASS" endtime="20151210 04:59:40.964" starttime="20151210 04:59:40.094"></status>
+</kw>
+<kw name="Input Password" library="resource">
+<arguments>
+<arg>assignment1</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>login-password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20151210 04:59:40.966" level="INFO">Typing text 'assignment1' into text field 'login-password'</msg>
+<status status="PASS" endtime="20151210 04:59:41.846" starttime="20151210 04:59:40.965"></status>
+</kw>
+<status status="PASS" endtime="20151210 04:59:41.847" starttime="20151210 04:59:40.964"></status>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@class="btn login-sign-in-btn js-login-sign-in btn-block-max-s btn-block-max-s"]</arg>
+</arguments>
+<msg timestamp="20151210 04:59:41.848" level="INFO">Clicking button 'xpath=//button[@class="btn login-sign-in-btn js-login-sign-in btn-block-max-s btn-block-max-s"]'.</msg>
+<status status="PASS" endtime="20151210 04:59:42.748" starttime="20151210 04:59:41.848"></status>
+</kw>
+<status status="PASS" endtime="20151210 04:59:42.748" starttime="20151210 04:59:41.847"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Welcome to your Walmart account!</arg>
+</arguments>
+<status status="PASS" endtime="20151210 04:59:44.537" starttime="20151210 04:59:42.749"></status>
+</kw>
+<kw name="Empty Cart" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//i[@class="wmicon wmicon-cart"]</arg>
+</arguments>
+<msg timestamp="20151210 04:59:44.539" level="INFO">Clicking element 'xpath=//i[@class="wmicon wmicon-cart"]'.</msg>
+<status status="PASS" endtime="20151210 04:59:46.392" starttime="20151210 04:59:44.538"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Your cart:</arg>
+</arguments>
+<status status="PASS" endtime="20151210 04:59:46.854" starttime="20151210 04:59:46.392"></status>
+</kw>
+<kw type="for" name="${i} IN RANGE [ 9999 ]">
+<kw type="foritem" name="${i} = 0">
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<arguments>
+<arg>Page Should Not Contain Button</arg>
+<arg>xpath=//button[@id="CartRemItemBtn"]</arg>
+</arguments>
+<assign>
+<var>${var}</var>
+</assign>
+<kw name="Page Should Not Contain Button" library="Selenium2Library">
+<doc>Verifies button identified by `locator` is not found from current page.</doc>
+<arguments>
+<arg>xpath=//button[@id="CartRemItemBtn"]</arg>
+</arguments>
+<msg timestamp="20151210 04:59:47.070" level="INFO">Current page does not contain button 'xpath=//button[@id="CartRemItemBtn"]'.</msg>
+<msg timestamp="20151210 04:59:47.268" level="INFO">Current page does not contain input 'xpath=//button[@id="CartRemItemBtn"]'.</msg>
+<status status="PASS" endtime="20151210 04:59:47.269" starttime="20151210 04:59:46.856"></status>
+</kw>
+<msg timestamp="20151210 04:59:47.269" level="INFO">${var} = True</msg>
+<status status="PASS" endtime="20151210 04:59:47.269" starttime="20151210 04:59:46.855"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>${var}</arg>
+</arguments>
+<msg timestamp="20151210 04:59:47.270" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" endtime="20151210 04:59:47.270" starttime="20151210 04:59:47.270"></status>
+</kw>
+<status status="PASS" endtime="20151210 04:59:47.271" starttime="20151210 04:59:46.855"></status>
+</kw>
+<status status="PASS" endtime="20151210 04:59:47.271" starttime="20151210 04:59:46.854"></status>
+</kw>
+<status status="PASS" endtime="20151210 04:59:47.271" starttime="20151210 04:59:44.537"></status>
+</kw>
+<status status="PASS" endtime="20151210 04:59:47.272" critical="yes" starttime="20151210 04:59:34.521"></status>
+</test>
+<test id="s1-t2" name="Perform Search">
+<kw name="Input Search" library="resource">
+<arguments>
+<arg>${SEARCH KEY}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>search</arg>
+<arg>${search}</arg>
+</arguments>
+<msg timestamp="20151210 04:59:47.276" level="INFO">Typing text 'abc' into text field 'search'</msg>
+<status status="PASS" endtime="20151210 04:59:48.125" starttime="20151210 04:59:47.275"></status>
+</kw>
+<status status="PASS" endtime="20151210 04:59:48.125" starttime="20151210 04:59:47.274"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@class="searchbar-submit js-searchbar-submit" and @type="submit"]</arg>
+</arguments>
+<msg timestamp="20151210 04:59:48.127" level="INFO">Clicking button 'xpath=//button[@class="searchbar-submit js-searchbar-submit" and @type="submit"]'.</msg>
+<status status="PASS" endtime="20151210 04:59:57.775" starttime="20151210 04:59:48.126"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${SEARCH_KEY}'!='toys'</arg>
+<arg>Location Should Contain</arg>
+<arg>${SEARCH RES OTHERS}</arg>
+</arguments>
+<kw name="Location Should Contain" library="Selenium2Library">
+<doc>Verifies that current URL contains `expected`.</doc>
+<arguments>
+<arg>${SEARCH RES OTHERS}</arg>
+</arguments>
+<msg timestamp="20151210 04:59:57.842" level="INFO">Current location contains 'http://www.walmart.com/search/'.</msg>
+<status status="PASS" endtime="20151210 04:59:57.843" starttime="20151210 04:59:57.777"></status>
+</kw>
+<status status="PASS" endtime="20151210 04:59:57.843" starttime="20151210 04:59:57.776"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${SEARCH_KEY}'=='toys'</arg>
+<arg>Location Should Contain</arg>
+<arg>${SEARCH RES TOYS}</arg>
+</arguments>
+<status status="PASS" endtime="20151210 04:59:57.844" starttime="20151210 04:59:57.844"></status>
+</kw>
+<status status="PASS" endtime="20151210 04:59:57.845" critical="yes" starttime="20151210 04:59:47.274"></status>
+</test>
+<test id="s1-t3" name="Add To Card">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${SEARCH_KEY}'!='toys'</arg>
+<arg>Click Image</arg>
+<arg>xpath=//img[@class="product-image"][1]</arg>
+</arguments>
+<kw name="Click Image" library="Selenium2Library">
+<doc>Clicks an image found by `locator`.</doc>
+<arguments>
+<arg>xpath=//img[@class="product-image"][1]</arg>
+</arguments>
+<msg timestamp="20151210 04:59:57.848" level="INFO">Clicking image 'xpath=//img[@class="product-image"][1]'.</msg>
+<status status="PASS" endtime="20151210 05:00:09.908" starttime="20151210 04:59:57.848"></status>
+</kw>
+<status status="PASS" endtime="20151210 05:00:09.908" starttime="20151210 04:59:57.847"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${SEARCH_KEY}'=='toys'</arg>
+<arg>Click Image</arg>
+<arg>xpath=//img[@class="product-image js-product-image tile-row img-hide-alt"][1]</arg>
+</arguments>
+<status status="PASS" endtime="20151210 05:00:09.912" starttime="20151210 05:00:09.911"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${SEARCH_KEY}'=='iphone'</arg>
+<arg>Click Element</arg>
+<arg>xpath=//span[@title="Silver"]</arg>
+</arguments>
+<status status="PASS" endtime="20151210 05:00:09.914" starttime="20151210 05:00:09.913"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1.5s</arg>
+</arguments>
+<msg timestamp="20151210 05:00:11.415" level="INFO">Slept 1 second 500 milliseconds</msg>
+<status status="PASS" endtime="20151210 05:00:11.415" starttime="20151210 05:00:09.914"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@id="WMItemAddToCartBtn"]</arg>
+</arguments>
+<msg timestamp="20151210 05:00:11.417" level="INFO">Clicking button 'xpath=//button[@id="WMItemAddToCartBtn"]'.</msg>
+<status status="PASS" endtime="20151210 05:00:12.560" starttime="20151210 05:00:11.416"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//a[@id="PACSubTtlItemLnk" and contains(text(),'(1 item)')]</arg>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20151210 05:00:13.342" starttime="20151210 05:00:12.562"></status>
+</kw>
+<kw name="Empty Cart and Close" library="resource">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>xpath=//a[@id="PACSubTtlItemLnk"]</arg>
+</arguments>
+<msg timestamp="20151210 05:00:13.344" level="INFO">Clicking link 'xpath=//a[@id="PACSubTtlItemLnk"]'.</msg>
+<status status="PASS" endtime="20151210 05:00:15.119" starttime="20151210 05:00:13.344"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Your cart:</arg>
+</arguments>
+<status status="PASS" endtime="20151210 05:00:16.056" starttime="20151210 05:00:15.119"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@id="CartRemItemBtn"]</arg>
+</arguments>
+<msg timestamp="20151210 05:00:16.057" level="INFO">Clicking button 'xpath=//button[@id="CartRemItemBtn"]'.</msg>
+<status status="PASS" endtime="20151210 05:00:16.218" starttime="20151210 05:00:16.057"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20151210 05:00:17.219" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20151210 05:00:17.220" starttime="20151210 05:00:16.219"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20151210 05:00:18.575" starttime="20151210 05:00:17.221"></status>
+</kw>
+<status status="PASS" endtime="20151210 05:00:18.575" starttime="20151210 05:00:13.343"></status>
+</kw>
+<status status="PASS" endtime="20151210 05:00:18.575" critical="yes" starttime="20151210 04:59:57.846"></status>
+</test>
+<status status="PASS" endtime="20151210 05:00:18.575" starttime="20151210 04:59:34.365"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Walmart" pass="3">Walmart</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

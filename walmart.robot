@@ -13,13 +13,13 @@ Valid Login
 Perform Search
     Input Search                       ${SEARCH KEY}
     Click Button                       xpath=//button[@class="searchbar-submit js-searchbar-submit" and @type="submit"]
-    Run keyword if                     '${SEARCH KEY}'!='toys'    Location Should Contain    ${SEARCH RES OTHERS}
-    Run keyword if                     '${SEARCH KEY}'=='toys'    Location Should Contain    ${SEARCH RES TOYS}
+    Run keyword if                     '${SEARCH_KEY}'!='toys'    Location Should Contain    ${SEARCH RES OTHERS}
+    Run keyword if                     '${SEARCH_KEY}'=='toys'    Location Should Contain    ${SEARCH RES TOYS}
 	
 Add To Card
-    Run keyword if                     '${SEARCH KEY}'!='toys'    Click Image    xpath=//img[@class="product-image"][1]
-    Run keyword if                     '${SEARCH KEY}'=='toys'    Click Image    xpath=//img[@class="product-image js-product-image tile-row img-hide-alt"][1]
-    Run keyword if                     '${SEARCH KEY}'=='iphone'  Click Element  xpath=//span[@title="Silver"]
+    Run keyword if                     '${SEARCH_KEY}'!='toys'    Click Image    xpath=//img[@class="product-image"][1]
+    Run keyword if                     '${SEARCH_KEY}'=='toys'    Click Image    xpath=//img[@class="product-image js-product-image tile-row img-hide-alt"][1]
+    Run keyword if                     '${SEARCH_KEY}'=='iphone'  Click Element  xpath=//span[@title="Silver"]
     Sleep                              1.5s
     Click Button                       xpath=//button[@id="WMItemAddToCartBtn"]
     Wait Until Page Contains Element   xpath=//a[@id="PACSubTtlItemLnk" and contains(text(),'(1 item)')]    10
